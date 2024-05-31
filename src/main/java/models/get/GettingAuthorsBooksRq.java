@@ -14,5 +14,4 @@ import lombok.ToString;
 public class GettingAuthorsBooksRq {
 
     private String id;
-    private String contentType;
 }

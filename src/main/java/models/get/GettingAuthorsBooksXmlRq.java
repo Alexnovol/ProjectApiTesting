@@ -1,4 +1,4 @@
-package models.post;
+package models.get;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import entity.Author;
@@ -15,6 +15,4 @@ import lombok.ToString;
 public class GettingAuthorsBooksXmlRq {
 
     private Author author;
-    private int id;
-    private String contentType;
 }

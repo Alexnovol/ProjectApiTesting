@@ -7,10 +7,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.awt.print.Book;
-import java.util.HashMap;
-import java.util.List;
-
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Getter
 @Setter
@@ -18,10 +14,20 @@ import java.util.List;
 @ToString
 public class GettingAuthorsBooksRs {
 
-    private HashMap<Author, List<Book>> authorsBooks;
-
     private int errorCode;
     private String errorMessage;
     private String errorDetails;
+
+    @Getter
+    @Setter
+    @EqualsAndHashCode
+    @ToString
+    public class Book {
+
+        private long id;
+        private String bookTitle;
+        private Author author;
+
+    }
 
 }

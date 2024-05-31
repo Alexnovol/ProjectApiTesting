@@ -16,5 +16,4 @@ public class SavingNewAuthorRq {
     private String firstName;
     private String familyName;
     private String secondName;
-    private String contentType;
 }

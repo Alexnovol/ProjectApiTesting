@@ -16,5 +16,4 @@ public class SavingNewBookRq {
 
     private String bookTitle;
     private Author author;
-    private String contentType;
 }
